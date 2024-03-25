@@ -3,7 +3,7 @@
 Done by: Sherman Ng Wei Sheng
 
 ## Requirements
-<u>Tested on the following hardware / software</u>
+<u>Tested on the following hardware / software</u><br/>
 Device: Windows 10, 64 bit<br/>
 Node.JS Version: 18.4.0<br/>
 npm Version: 8.12.1<br/>
@@ -33,7 +33,7 @@ DB_HOST=\<pgsql ip address / localhost>
 DB_PORT=\<pgsql port number>
 DB_PASSWORD=\<pgsql password>
 GOOGLE_AUTH_TOKEN=\<google auth token to Google Cloud Storage>
-GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>`
+GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>
 ```
 2. Install all dependencies
 ```bash
