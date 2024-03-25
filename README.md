@@ -4,10 +4,10 @@ Done by: Sherman Ng Wei Sheng
 
 ## Requirements
 <u>Tested on the following hardware / software</u>
-Device: Windows 10, 64 bit
-Node.JS Version: 18.4.0
-npm Version: 8.12.1
-PostgreSQL: 16
+Device: Windows 10, 64 bit<br/>
+Node.JS Version: 18.4.0<br/>
+npm Version: 8.12.1<br/>
+PostgreSQL: 16<br/>
 
 ## Description
 This repository contains code for interaction with a local PostgreSQL server and code involved to do back up to the Cloud.
@@ -26,13 +26,15 @@ This repository contains code for interaction with a local PostgreSQL server and
 
 ### Start Express Server
 1. Update the following environment variables in a `.env` file
-> DB_USERNAME=\<pgsql database username>\n
-> DB_DATABASE=\<pgsql database name>\n
-> DB_HOST=\<pgsql ip address / localhost>\n
-> DB_PORT=\<pgsql port number>\n
-> DB_PASSWORD=\<pgsql password>\n
-> GOOGLE_AUTH_TOKEN=\<google auth token to Google Cloud Storage>\n
-> GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>\n
+```
+DB_USERNAME=\<pgsql database username>
+DB_DATABASE=\<pgsql database name>
+DB_HOST=\<pgsql ip address / localhost>
+DB_PORT=\<pgsql port number>
+DB_PASSWORD=\<pgsql password>
+GOOGLE_AUTH_TOKEN=\<google auth token to Google Cloud Storage>
+GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>`
+```
 2. Install all dependencies
 ```bash
 npm install
