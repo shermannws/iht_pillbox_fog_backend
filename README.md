@@ -26,13 +26,13 @@ This repository contains code for interaction with a local PostgreSQL server and
 
 ### Start Express Server
 1. Update the following environment variables in a `.env` file
-> DB_USERNAME=\<pgsql database username>
-> DB_DATABASE=\<pgsql database name>
-> DB_HOST=\<pgsql ip address / localhost>
-> DB_PORT=\<pgsql port number>
-> DB_PASSWORD=\<pgsql password>
-> GOOGLE_AUTH_TOKEN=\<google auth token to Google Cloud Storage>
-> GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>
+> DB_USERNAME=\<pgsql database username>\n
+> DB_DATABASE=\<pgsql database name>\n
+> DB_HOST=\<pgsql ip address / localhost>\n
+> DB_PORT=\<pgsql port number>\n
+> DB_PASSWORD=\<pgsql password>\n
+> GOOGLE_AUTH_TOKEN=\<google auth token to Google Cloud Storage>\n
+> GOOGLE_BUCKET_NAME=\<google cloud storage bucket name>\n
 2. Install all dependencies
 ```bash
 npm install
