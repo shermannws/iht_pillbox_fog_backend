@@ -1,0 +1,26 @@
+CREATE TABLE pill_list (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    weight INT NOT NULL,
+    deleted BOOLEAN DEFAULT FALSE
+);
+
+
+CREATE TABLE pill_prescription (
+    patient_id INT,
+    pill_id INT,
+    medication_type VARCHAR(10),
+    assigned BOOLEAN,
+    PRIMARY KEY (patient_id, pill_id, medication_type)
+);
+
+CREATE TABLE IF NOT EXISTS pillstatuses
+(
+    patientid integer NOT NULL,
+    medicationid integer NOT NULL,
+    medicationtype character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    administeredtime timestamp without time zone NOT NULL,
+    consumedtime timestamp without time zone,
+    CONSTRAINT pillstatuses_pkey PRIMARY KEY (patientid, medicationid),
+    CONSTRAINT pillstatuses_medicationtype_check CHECK (medicationtype::text = ANY (ARRAY['before'::character varying, 'after'::character varying]::text[]))
+)
