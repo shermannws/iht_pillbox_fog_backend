@@ -64,26 +64,7 @@ const deletePill = async (name) => {
   });
 }
 
-// //update an entry
-// const updateEntry = (patientId, medicationId, body) => {
-//   return new Promise(function (resolve, reject) {
-//     const { consumedTime } = body;
-//     pool.query(
-//       "UPDATE pillstatuses SET consumedTime = $1 WHERE patientId = $2 AND medicationId = $3 RETURNING *",
-//       [consumedTime, patientId, medicationId],
-//       (error, results) => {
-//         if (error) {
-//           reject(error);
-//         }
-//         if (results && results.rows) {
-//           resolve(`Medication entry updated: ${JSON.stringify(results.rows[0])}`);
-//         } else {
-//           reject(new Error("No results found"));
-//         }
-//       }
-//     );
-//   });
-// };
+
 module.exports = {
   getActivePills,
   addNewPill,

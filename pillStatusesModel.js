@@ -22,6 +22,7 @@ const getEntries = async (patientId) => {
     throw new Error("Internal server error");
   }
 };
+
 //create a new merchant record in the databsse
 const createEntry = (body) => {
   return new Promise(function (resolve, reject) {
@@ -49,6 +50,7 @@ const createEntry = (body) => {
     );
   });
 };
+
 //update an entry
 const updateEntry = (patientId, medicationId, body) => {
   return new Promise(function (resolve, reject) {
@@ -69,6 +71,7 @@ const updateEntry = (patientId, medicationId, body) => {
     );
   });
 };
+
 module.exports = {
   getEntries,
   createEntry,
